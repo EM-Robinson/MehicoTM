@@ -34,8 +34,8 @@ function Tech() {
 
       <div style={{ marginTop: "2rem", fontSize: "0.75rem", color: "var(--text-muted)" }}>
         <p>Build philosophy:
-          Small tools > big ideas.
-          I’d rather ship 10 tiny things that actually get used than chase one massive launch.
+          Small tools &gt; big ideas.
+          I’d rather ship 10 tiny things…
           Follow the curiosity. Ship the experiment.
         </p>
       </div>

@@ -339,3 +339,38 @@ a {
 .footer-link:hover {
   opacity: 1;
 }
+
+.blog-post-content p {
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.blog-post-content h2 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.blog-post-content ul {
+  margin-left: 1.25rem;
+  margin-bottom: 0.75rem;
+  list-style: disc;
+}
+
+.blog-post-content li {
+  margin-bottom: 0.3rem;
+}
+
+.blog-post-content code {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.85rem;
+  background: #111423;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+}
+
+.blog-post-content a {
+  color: var(--accent);
+  text-decoration: underline;
+}

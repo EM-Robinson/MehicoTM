@@ -7,6 +7,7 @@ import Soccer from "./pages/Soccer.jsx";
 import Pokemon from "./pages/Pokemon.jsx";
 import Tech from "./pages/Tech.jsx";
 import Blog from "./pages/Blog.jsx";
+import BlogPost from "./pages/BlogPost.jsx";
 
 function App() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
           <Route path="/pokemon" element={<Pokemon />} />
           <Route path="/tech" element={<Tech />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </Layout>
     </div>
