@@ -8,6 +8,7 @@ const links = [
   { to: "/pokemon", label: "Pokémon" },
   { to: "/tech", label: "Tech" },
   { to: "/blog", label: "Blog" },
+  { to: "/devlog", label: "Devlog", variant: "devlog" },
 ];
 
 function NavBar({ currentPath }) {
@@ -18,7 +19,9 @@ function NavBar({ currentPath }) {
           <div className="nav-avatar" />
           <div>
             <div className="nav-title">Elijah Robinson</div>
-            <div className="nav-subtitle">Tech · Gaming · Soccer · Pokémon</div>
+            <div className="nav-subtitle">
+              Tech · Gaming · Soccer · Pokémon
+            </div>
           </div>
         </div>
         <div className="nav-links">
@@ -27,12 +30,13 @@ function NavBar({ currentPath }) {
               link.to === "/"
                 ? currentPath === "/"
                 : currentPath.startsWith(link.to);
+
+            const classes = ["nav-link"];
+            if (isActive) classes.push("active");
+            if (link.variant === "devlog") classes.push("nav-link-devlog");
+
             return (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`nav-link ${isActive ? "active" : ""}`}
-              >
+              <Link key={link.to} to={link.to} className={classes.join(" ")}>
                 {link.label}
               </Link>
             );

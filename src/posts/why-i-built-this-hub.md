@@ -2,6 +2,7 @@
 title: "Why I Built This Hub"
 date: "2025-12-08"
 summary: "I’m into a lot: gaming, soccer, Pokémon, art, and building tools. Instead of pretending they’re separate, this hub is where I mash them together and track the journey."
+tags: ["meta", "intro", "build-log"]
 ---
 
 I’ve always had my interests split across different apps and platforms:

@@ -23,6 +23,7 @@ function App() {
           <Route path="/tech" element={<Tech />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/devlog" element={<Blog />} />
         </Routes>
       </Layout>
     </div>
